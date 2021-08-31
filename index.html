@@ -1,544 +1,106 @@
-<!DOCTYPE html>
-<meta charset="utf-8">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="lib/fullpage.css" />
-<link rel="stylesheet" type="text/css" href="css/style.css" />
+<html>
+<head>
+	<style>
+		body {
+			margin: 0 0 0 0;
+			padding: 0 0 0 0;
+		}
 
+		.footer-wrapper {
+/*			position: fixed;*/
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			background-color: #25292E;
+			color: #efefef;
+			text-align: center;
+			padding: 10 0 10 0;
+		}
+		.footer-content-wrapper {
+			display: inline-block;
+			width: 700px;
+			text-align: center;
+		}
+		.page-wrapper {
+			width: 100%;
+			text-align: center;
+			margin: 0 0 0 0;
+			padding: 0 0 50 0;
+		}
+		.page-top-wrapper {
+			width: 100%;
+			padding: 1px;
+			text-align: center;
+			background-color: #25292E; /*#F0F0F0;*/
+			color: #efefef;
+			/*border-bottom: 1px solid #B8B8B8;*/
+		}
+		.page-content-wrapper {
+			display: inline-block;
+			width: 700px;
+			text-align: center;
+		}
+		.demo-row {
+			display: inline-block;
+			width: 650px;
+			padding-bottom: 20px;
+			padding-top: 1px;
+			margin-top: 40px;
+			background-color:#F0F0F0;
+			border-width: 1px;
+			border-style: solid;
+			border-color: #DADADA;
+			
+		}
+		.demo-video iframe {
+			border: 1px solid  #DADADA;
+		}
+		
+		.demo-video-foot {
+			display: inline-block;
+			text-align: right;
+			margin-top: 0px;
+			width: 560px;
+			color: gray;
+		}
+	</style>
+</head>
 <body>
-  <div id="fullpage">
-    <div class="section">
-      <div class="intro">
-        <h1>Smoking Kills!</h1>
-        <h2>A visual interpretation to smoking and cancer</h2>
-        <h3>Made by Denizhan Kara</h3>
-      </div>
-    </div>
-
-
-    <div class="section">
-      <div class="container">
-        <div class="text-explanation">
-
-          <p>Tobacco use is responsible for 480,000 premature deaths
-            each year and almost $300 billion in health care costs.
-
-            A new study from the American Cancer Society reveals that
-            smoking is responsible for about one-third of all cancer
-            deaths in the nation overall.
-            State-level estimates of the number
-            of adult deaths from smoking in 2014.
-            You can browse the results for different states using the map below.
-
-          </p>
-        </div>
-        <div class="chart" id="us_mortality_chart">
-          <h3>Proportion of Cancer Deaths Attributed to Smoking in U.S. in 2014 (%)</h3>
-
-          <script src="//d3js.org/d3.v3.min.js"></script>
-          <script src="d3.legend.js"></script>
-          <svg id="us_mortality_svg" width="1000" height="600"></svg>
-
-          <script src="//d3js.org/d3.v3.min.js"></script>
-          <script src="d3.legend.js"></script>
-          <script src="//d3js.org/queue.v1.min.js"></script>
-          <script src="//d3js.org/topojson.v1.min.js"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
-          <script src="d3.legend.js"></script>
-          <script src="d3.legend.js"></script>
-
-          <script src="us_mortality.js"></script>
-
-
-          <script src="https://d3js.org/d3.v4.js"></script>
-          <script src="https://rawgit.com/susielu/d3-annotation/master/d3-annotation.min.js"></script>
-
-          <script>
-            // Features of the annotation
-            const annotations_3 = [
-
-              {
-                //below in makeAnnotations has type set to d3.annotationLabel
-                //you can add this type value below to override that default
-                type: d3.annotationCalloutCircle,
-                note: {
-                  label: "",
-                  title: "Smoking is the reason for the majority of all cancer cases, especially in US. Observe that it is dangerous in richer and poorer states alike.",
-                  wrap: 190
-                },
-                //settings for the subject, in this case the circle radius
-                subject: {
-                  radius: 22
-                },
-                x: 220,
-                y: 344,
-                dy: -220,
-                dx: 102
-              }, {
-                //below in makeAnnotations has type set to d3.annotationLabel
-                //you can add this type value below to override that default
-                type: d3.annotationCalloutCircle,
-                note: {
-                  label: "",
-                  title: "",
-                  wrap: 190
-                },
-                //settings for the subject, in this case the circle radius
-                subject: {
-                  radius: 16
-                },
-                x: 545,
-                y: 374,
-                dy: -250,
-                dx: -43
-              }, {
-                note: {
-                  label: "3,183 adults died from smoking-related cancer, 31.3 % percent of all cancer deaths in Alabama.",
-                  title: ""
-
-                },
-                connector: {
-                  end: "arrow" // 'dot' also available
-                },
-
-                x: 566,
-                y: 422,
-                dy: -10,
-                dx: 155
-              }
-
-            ]
-
-            // Add annotation to the chart
-            const makeAnnotations_3 = d3.annotation()
-              .annotations(annotations_3)
-            d3.select("#us_mortality_svg")
-              .append("g").attr("class", "annotation-group")
-
-              .call(makeAnnotations_3)
-          </script>
-
-        </div>
-
-
-      </div>
-    </div>
-
-
-
-    <div class="section">
-      <div class="container">
-        <div class="text-explanation">
-
-
-          <p>
-            Most deaths from smoking occur in older populations.
-            When we look at the breakdown of deaths from smoking by age, we
-            see that it is mainly older populations that are affected.Note that
-            the share of lower ages increase slightly as the smoking gets more
-            and more popular among the younger population over the years.
-          </p>
-
-
-        </div>
-
-
-        <div class="text-first">
-
-          <p>
-            You can use the slider below in order to browse the age distribution
-            of smoking deaths over the years. Also by hovering over bar charts,
-            which brings up an explanatory tooltip,
-            you can browse exact mortality rates over several years.
-
-          </p>
-
-          <form>
-
-            <label for="year">Please select a year: </label>
-            <input type="range" min=1990 max=2017 step=1 id="year" value=2017
-              oninput="selected_year.value = year.value">
-            <output name="selected_year" id="selected_year">2017</output>
-          </form>
-
-        </div>
-
-        <div class="chart" id="first_vis">
-          <h3>Death rates from smoking by age in the world, 2017
-          </h3>
-          <svg id="overview_svg" width="650" height="450"></svg>
-
-          <script src="https://d3js.org/d3.v4.js"></script>
-          <script src="https://rawgit.com/susielu/d3-annotation/master/d3-annotation.min.js"></script>
-
-          <script>
-            // Features of the annotation
-            const annotations = [
-
-              {
-                note: {
-                  label: " Death rates for younger adults and children are very low",
-                  title: ""
-
-                },
-                connector: {
-                  end: "arrow" // 'dot' also available
-                },
-
-                x: 499,
-                y: 350,
-                dy: -55,
-                dx: 20
-              },
-
-              {
-                note: {
-                  label: "Death rates from smoking are much higher in people older than 70 years",
-                  title: "Elderly danger"
-
-                },
-                connector: {
-                  end: "arrow" // 'dot' also available
-                },
-
-                x: 166,
-                y: 55,
-                dy: 10,
-                dx: 100
-              }
-            ]
-
-            // Add annotation to the chart
-            const makeAnnotations = d3.annotation()
-              .annotations(annotations)
-            d3.select("#overview_svg")
-              .append("g").attr("class", "annotation-group")
-
-              .call(makeAnnotations)
-          </script>
-
-
-        </div>
-
-
-
-      </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="section">
-      <div class="container">
-        <div class="text-explanation">
-          <p>
-            According to the Global Burden of Disease 7 million people
-            died from smoking tobacco alone in 2017. Apart from that ,
-            smoking is a risk factor for several of the world’s leading
-            causes of death, including lung and other forms of cancer,
-            heart disease, and respiratory diseases.
-
-            This chart is shown for the global total deaths by major risk
-            factors over the years.
-            You can explore the mortalities by death factor over the years using mousover
-            cursor.
-
-
-          </p>
-        </div>
-        <div class="chart" id="crime_over_time_chart">
-          <h3>Number of premature deaths by risk factor, World, 1990 to 2017</h3>
-          <svg id="crime_over_time_svg" width="800" height="400"></svg>
-
-          <script src="https://d3js.org/d3.v4.js"></script>
-          <script src="https://rawgit.com/susielu/d3-annotation/master/d3-annotation.min.js"></script>
-
-          <script>
-            // Features of the annotation
-            const annotations_2 = [
-
-              {
-                //below in makeAnnotations has type set to d3.annotationLabel
-                //you can add this type value below to override that default
-                type: d3.annotationCalloutCircle,
-                note: {
-                  label: "",
-                  title: "Smoking is 10 times more dangerous than drugs !!",
-                  wrap: 190
-                },
-                //settings for the subject, in this case the circle radius
-                subject: {
-                  radius: 22
-                },
-                x: 620,
-                y: 134,
-                dy: -88,
-                dx: -102
-              }, {
-                //below in makeAnnotations has type set to d3.annotationLabel
-                //you can add this type value below to override that default
-                type: d3.annotationCalloutCircle,
-                note: {
-                  label: "",
-                  title: "",
-                  wrap: 190
-                },
-                //settings for the subject, in this case the circle radius
-                subject: {
-                  radius: 13
-                },
-                x: 620,
-                y: 324,
-                dy: -280,
-                dx: -102
-              },
-
-
-
-              {
-                note: {
-                  label: "High blood pressure induced by both smoking and obesity",
-                  title: ""
-
-                },
-                connector: {
-                  end: "arrow" // 'dot' also available
-                },
-
-                x: 588,
-                y: 55,
-                dy: 10,
-                dx: 100
-              }
-            ]
-
-            // Add annotation to the chart
-            const makeAnnotations_2 = d3.annotation()
-              .annotations(annotations_2)
-            d3.select("#crime_over_time_svg")
-              .append("g").attr("class", "annotation-group")
-
-              .call(makeAnnotations_2)
-          </script>
-        </div>
-      </div>
-    </div>
-
-
-
-    <div class="section">
-
-      <div class="container">
-
-        <div class="text-explanation">
-          <p>
-            Finally, to show the correlation between smoking and cancer in
-            various countries, Global Burden of Disease published a detailed report in
-            late 20th century. The data provides the number of smoke sales
-            per adult per day versus the lung cancer mortalities in late 20th century.
-            In many
-            countries we see a significant rise,
-            peak and then decline in lung cancer death rates
-            ,which are driven by the trends in smoking. Browse the different
-            country statistics using the dropdown menu and explore the correlation
-            by mousing over.
-
-
-          </p>
-        </div>
-
-
-        <div class="text-first">
-          <p>
-
-            Observe that lung
-            cancer trends follow the smoking trends with a certain lag.
-            Note that the decrease in smoking trends are generally
-            more significant in richer countries due to regulations, which are
-            followed by even sharper decreases in the lung cancer mortalities.
-
-
-          </p>
-          <div id="legendContainer" class="legendContainer">
-            <svg id="legend" width="320" height="60"></svg>
-          </div>
-
-          <!-- load the d3.js library -->
-          <script src="https://d3js.org/d3.v3.min.js"></script>
-          <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-
-
-          <select id="inds">
-            <option value="Australia" selected="selected">Australia</option>
-            <option value="Austria">Austria</option>
-            <option value="Bulgaria">Bulgaria</option>
-            <option value="Canada">Canada</option>
-
-            <option value="Denmark">Denmark</option>
-
-            <option value="Finland">Finland</option>
-
-            <option value="France">France</option>
-
-            <option value="Germany">Germany</option>
-
-            <option value="Italy">Italy</option>
-
-            <option value="Japan">Japan</option>
-
-            <option value="Netherlands">Netherlands</option>
-
-            <option value="New Zealand">New Zealand</option>
-
-            <option value="Norway">Norway</option>
-
-            <option value="Russia">Russia</option>
-
-            <option value="Spain">Spain</option>
-
-            <option value="Sweden">Sweden</option>
-
-            <option value="Switzerland">Switzerland</option>
-
-            <option value="United Kingdom">United Kingdom</option>
-
-            <option value="United States">United States</option>
-
-          </select>
-
-
-        </div>
-
-
-        <div class="chart-left" id="third_chart">
-          <h3>Lung cancer and smoking around the World (1993-2003)</h3>
-          <svg id="third_chart_svg" width="800" height="600"></svg>
-
-          <script src="trial.js"></script>
-
-
-        </div>
-
-
-
-
-      </div>
-    </div>
-
-
-
-
-
-
-    <div class="section">
-      <div class="container">
-        <div class="column-header">
-          <h3>Remember, smoking kills !! </h3>
-        </div>
-        <div class="column-left">
-          <h6>More on smoking and cancer in US ...</h6>
-          <p class="about_text">
-            Cigarette smoking is the leading cause of preventable disease
-            and death in the United States, accounting for more than
-            480,000 deaths every year, or about 1 in 5 deaths. Click
-            <a href="#us_mortality">here</a>
-            to investigate cancer deaths attributed to smoking again in the U.S.
-
-          </p>
-          <h6>More on premature deaths and smoking ...</h6>
-          <p class="about_text">
-            Smoking is one the leading risks for early death – 8 million people died from smoking in 2017.
-            On average, smokers die 10 years earlier than nonsmokers. If you
-            want to further investigate age groups for smoking mortalities,
-            click <a href="#mortality_age_groups">here</a> .
-
-
-
-          </p>
-          <h6>More on smoking and other risks ...</h6>
-          <p class="about_text">
-            Smoking causes cancer, heart disease, stroke, lung diseases,
-            diabetes, and chronic obstructive pulmonary disease (COPD),
-            which includes emphysema and chronic bronchitis. Apart from direct
-            smoking induced mortalities, the secondary health issues collectively
-            cause more fatalities than drugs. In order to explore the number
-            of premature deaths in the world by risk factors in recent years,
-            click <a href="#risk_factors">here</a> .
-
-
-
-          </p>
-        </div>
-        <div class="column-right">
-          <h6>More on country-wise statistics of smoking trends and mortalities ...</h6>
-          <p class="about_text">
-            Death rates from smoking have fallen in most countries
-            in recent decades. However, the number of deaths continues
-            to rise in most low-to-middle income countries. In order to explore
-            the country-wise performances and correlation between trends of
-            smoking and cancer deaths,
-            click <a href="#country_deaths">here</a> .
-
-          </p>
-
-          <h6>More insight on smoking & cancer ...</h6>
-          <p class="about_text">
-            This visualization utilized various data in order best
-            demonstrate the correlation between smoking and cancer.
-            To get more detailed information, here are the sources:
-
-
-            <p class="about_text_2">
-              <a href="https://www.cdc.gov/tobacco/data_statistics/fact_sheets/adult_data/cig_smoking/index.htm
-              "> 1) Current Cigarette Smoking Among Adults in the United States by CDC</a>
-            </p>
-            <p class="about_text_2">
-              <a href="https://www.cdc.gov/tobacco/data_statistics/fact_sheets/fast_facts/index.htm#cigarette-smoking">
-                2) Fast facts on the health problems induced by smoking around the world, by CDC</a>
-            </p>
-
-            <p class="about_text_2">
-              <a href="https://www.who.int/news-room/fact-sheets/detail/tobacco">
-                3) Tobacco kills!, by World Health Organization</a>
-            </p>
-
-        </div>
-
-      </div>
-      <div class="column-end">
-        <h1>THANK YOU FOR YOUR TIME!</h1>
-        <p>To explore the visualization again, click <a href="#intro"> here</a>.</p>
-      </div>
-
-    </div>
-  </div>
-  <script src="https://d3js.org/d3.v4.min.js"></script>
-  <script src="https://d3js.org/topojson.v2.min.js"></script>
-  <script type="text/javascript" src="lib/fullpage.js"></script>
-  <script>
-    var page = new fullpage('#fullpage', {
-      licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-      navigation: true,
-      anchors: ['intro', 'us_mortality', 'mortality_age_groups', 'risk_factors', 'country_deaths', 'about'],
-      sectionsColor: ['#c9c0bb', '#c9c0bb', '#c9c0bb', '#c9c0bb', '#c9c0bb', '#c9c0bb', '#c9c0bb'],
-      slidesNavigation: true
-    });
-  </script>
-
-  <script src="js/death_rates_from_smoking_chart.js"></script>
-  <script src="js/reasons_of_death.js"></script>
-  <script src="trial.js"></script>
-  <script src="js/map.js"></script>
-
-
+	<div class="page-wrapper">
+		<div class="page-top-wrapper">
+			<h1>ScheduLeak Paper Resource Page</h1>
+		</div>
+		<div class="page-content-wrapper">
+			<div class="demo-row">
+			  <h2>1. Overriding Control Signals</h2>
+			  <h3>Demo-1.1: Remote-Control Rover (Throttle and Steering)</h3>
+			  <div class="demo-video">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/g12Zk1MboyE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<div class="demo-video-foot">Video Link: <a href="https://youtu.be/g12Zk1MboyE">https://youtu.be/g12Zk1MboyE</a></div>
+				</div>
+				<br>
+				<hr width="90%">
+				<h3>Demo-1.2: Quadcopter (Throttle)</h3>
+				<div class="demo-video">
+				  <iframe width="560" height="315" src="https://www.youtube.com/embed/U0MtEnwvhjI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<div class="demo-video-foot">Video Link: <a href="https://youtu.be/U0MtEnwvhjI">https://youtu.be/U0MtEnwvhjI</a></div>
+				</div>
+			</div>
+			<div class="demo-row">
+			  <h2>2. Inferring System Behaviors</h2>
+			  <h3>Demo-2: Cache-Timing Side-Channel Attack</h3>
+				<div class="demo-video">
+				  <iframe width="560" height="315" src="https://www.youtube.com/embed/NqAYzPZ94_U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<div class="demo-video-foot">Video Link: <a href="https://youtu.be/NqAYzPZ94_U">https://youtu.be/NqAYzPZ94_U</a></div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<div class="footer-wrapper">
+		<div class="footer-content-wrapper">
+			2018 ScheduLeak 
+		</div>
+	</div>
 </body>
-
 </html>
