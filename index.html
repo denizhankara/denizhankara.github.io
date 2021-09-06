@@ -1,107 +1,147 @@
+<!doctype html>
 <html>
-<head>
-	<style>
-		body {
-			margin: 0 0 0 0;
-			padding: 0 0 0 0;
-		}
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>My Awesome Project by Harrison Ford</title>
+    
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-		.footer-wrapper {
-/*			position: fixed;*/
-			left: 0;
-			bottom: 0;
-			width: 100%;
-			background-color: #25292E;
-			color: #efefef;
-			text-align: center;
-			padding: 10 0 10 0;
-		}
-		.footer-content-wrapper {
-			display: inline-block;
-			width: 700px;
-			text-align: center;
-		}
-		.page-wrapper {
-			width: 100%;
-			text-align: center;
-			margin: 0 0 0 0;
-			padding: 0 0 50 0;
-		}
-		.page-top-wrapper {
-			width: 100%;
-			padding: 1px;
-			text-align: center;
-			background-color: #25292E; /*#F0F0F0;*/
-			color: #efefef;
-			/*border-bottom: 1px solid #B8B8B8;*/
-		}
-		.page-content-wrapper {
-			display: inline-block;
-			width: 700px;
-			text-align: left;
-		}
-		.demo-row {
-			display: inline-block;
-			width: 650px;
-			padding-bottom: 20px;
-			padding-top: 1px;
-			margin-top: 40px;
-			background-color:#F0F0F0;
-			border-width: 1px;
-			border-style: solid;
-			border-color: #DADADA;
-			
-		}
-		.demo-video iframe {
-			border: 1px solid  #DADADA;
-		}
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-30955754-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
 		
-		.demo-video-foot {
-			display: inline-block;
-			text-align: right;
-			margin-top: 0px;
-			width: 560px;
-			color: gray;
-		}
-	</style>
-</head>
-<body>
-	<div class="page-wrapper">
-		<div class="page-top-wrapper">
-			<h1>INSERT_NAME Paper Resource Page</h1>
-		</div>
-		<div class="page-content-wrapper">
-			<div class="demo-row">
-			  <h2>1. Source files for experiments</h2>
-			  <h3>VEINS Simulator</h3>
-        <p1>asdsadafsasdasdasd</p1>
-			  <div class="demo-video">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/g12Zk1MboyE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-					<div class="demo-video-foot">Video Link: <a href="https://youtu.be/g12Zk1MboyE">https://youtu.be/g12Zk1MboyE</a></div>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">NAME Paper Resource Page</h1>
+        <p class="header">This is an amazing project description.</p>
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/harrisonford/awesome/zipballmus/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/harrisonford/awesome/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="http://github.com/harrisonford/awesome">View On GitHub</a></li>
+        </ul>
+        
+      </header>
+      <section>
+        <h1>Introduction</h1>
+        
+      <p>This page contains artifacts for the paper: "INSERT_NAME" submitted to the 31th USENIX Security Symposium. The artifacts include INSERT_NAME source code, VEINS&F2MD simulator version used for experiments, traffic scenario implementations, and generated data for the scenario grid we detailed in the paper. </p>
+
+      
+      <h2>Running INSERT_NAME framework</h2>
+      
+      
+      Instructions for running the MBD framework...
+      
+
+      <h1>VEINS Scenarios for Experiments</h1>
+      Footages and resources for three different traffic scenarios used for experiments. Each scenario is 
+      tailored to demonstrate the capabilities of our solution 
+      under different traffic conditions and environments. Attacker nodes are depicted in red and genuine nodes in green.
+      <li>
+        Generated datasets for experiments are provided in the <a href="https://drive.google.com/drive/folders/1cd8WCqbW8xmsmmwu11O5nFJeTKLQz2FW?usp=sharing
+        ">drive link.</a>
+         
+        
+        </li>
+      <h2> Manhattan Grid </h2>
+      <p>
+        This scenario implements a single lane 10x10 grid map.
+        <li>We have developed a grid-likemap with single lanes, referred as Manhattan Grid. </li>
+        <li>Manhattan grid consist of single lane roads with a 10x10 grid layout. Intersections of roads are spaced 100m apart. </li>
+        <li>We use 100 vehicles with varying attacker densities that implements an equally represented mixture of considered attacks. </li>
+
+      </p>
+      <div class="demo-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cf36yRRqVwk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="demo-video-foot">Video Link: <a href="https://youtu.be/cf36yRRqVwk">https://youtu.be/cf36yRRqVwk</a></div>
 				</div>
-				<br>
-				<hr width="90%">
-				<h3>Demo-1.2: Quadcopter (Throttle)</h3>
-				<div class="demo-video">
-				  <iframe width="560" height="315" src="https://www.youtube.com/embed/U0MtEnwvhjI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-					<div class="demo-video-foot">Video Link: <a href="https://youtu.be/U0MtEnwvhjI">https://youtu.be/U0MtEnwvhjI</a></div>
+
+      
+      <h2> Erlangen Flock </h2>
+      <p> This scenario implements a realistic rush hour scenario with frequent congestions. 
+
+        
+        
+        
+        <li>
+        A modified version of Erlangen Map, implements a more realistic traffic scenario in the city of Erlangen, Germany.
+        </li>
+        <li>
+
+          Specifically, 150 vehicles are flocking out of a parking lot with 6 second intervals, and head to another junction in a single designated route. 
+        
+      </li>
+        <li>
+          The vehicles are not allowed to detour for another route, which forces occasional stops and traffic jams during commute.
+        </li>
+
+
+
+      </p>
+      <div class="demo-video">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/hnuzaZQorg4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="demo-video-foot">Video Link: <a href="https://youtu.be/g12Zk1MboyE">https://youtu.be/g12Zk1MboyE</a></div>
 				</div>
-			</div>
-			<div class="demo-row">
-			  <h2>2. Inferring System Behaviors</h2>
-			  <h3>Demo-2: Cache-Timing Side-Channel Attack</h3>
-				<div class="demo-video">
-				  <iframe width="560" height="315" src="https://www.youtube.com/embed/NqAYzPZ94_U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-					<div class="demo-video-foot">Video Link: <a href="https://youtu.be/NqAYzPZ94_U">https://youtu.be/NqAYzPZ94_U</a></div>
+      
+      <h2> IRTSX Map </h2>
+      <p>
+        The scenario emulates regular traffic scenario in the IRTSX campus.
+
+        
+        
+        <li>
+          This is a relatively small network which provides fast and predictable results.
+            </li>
+        <li>
+          It implements traffic lights, pedestrians and crossroad junctions and organic network properties with realistic path loss models.
+          </li>
+          <li>
+          There  are  more  than  300  entities  that arbitrarily enter and leave the network.
+          
+        </li>
+          
+  
+      
+      </p>
+      <div class="demo-video">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/P4ty51WPd8g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="demo-video-foot">Video Link: <a href="https://youtu.be/g12Zk1MboyE">https://youtu.be/g12Zk1MboyE</a></div>
 				</div>
-			</div>
-			
-		</div>
-	</div>
-	<div class="footer-wrapper">
-		<div class="footer-content-wrapper">
-			2018 ScheduLeak 
-		</div>
-	</div>
-</body>
+      <h1>Evaluation</h1>
+      <h2> Experiment results</h2>
+      
+      <h2> VeReMI Extension Performance</h2>
+
+      <h2> LuST Scenario Performance (CaTCh scenario)</h2>
+
+      
+      <h1>Source Files and Installation</h1>
+      <h2>VEINS&F2MD simulator</h2>
+      The repositories for VEINS&F2MD
+
+
+
+      
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+  </body>
 </html>
