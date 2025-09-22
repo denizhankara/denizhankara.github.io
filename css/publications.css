@@ -1,0 +1,440 @@
+/*************************************************
+ *  Publications Styling for Academic Website
+ **************************************************/
+
+/* Selected Publications Section */
+.selected-publications {
+  margin-bottom: 3rem;
+}
+
+.publication-item.featured {
+  background: #f8f9fa;
+  border-left: 4px solid #007bff;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0 8px 8px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.publication-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 12px;
+  margin-bottom: 0.75rem;
+}
+
+.publication-badge.neurips {
+  background: #ff6b6b;
+  color: white;
+}
+
+.publication-badge.www {
+  background: #4ecdc4;
+  color: white;
+}
+
+.publication-badge.sensys {
+  background: #45b7d1;
+  color: white;
+}
+
+.publication-badge.arxiv {
+  background: #b07219;
+  color: white;
+}
+
+.publication-badge.industry {
+  background: #96ceb4;
+  color: white;
+}
+
+.publication-item h3 {
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.publication-item .authors {
+  color: #666;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.publication-item .venue {
+  color: #007bff;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+.publication-item .description {
+  color: #555;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.btn-link {
+  color: #007bff;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  transition: all 0.2s;
+}
+
+.btn-link:hover {
+  background: #007bff;
+  color: white;
+}
+
+/* All Publications Section */
+.all-publications {
+  margin-top: 3rem;
+}
+
+.year-section {
+  margin-bottom: 2.5rem;
+}
+
+.year-header {
+  color: #2c3e50;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.publications-list {
+  margin-left: 1rem;
+}
+
+.publication-item {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.publication-item:last-child {
+  border-bottom: none;
+}
+
+.publication-content h4 {
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.publication-content .venue {
+  color: #007bff;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.publication-links.small {
+  margin-top: 0.5rem;
+}
+
+.publication-links.small a {
+  font-size: 0.75rem;
+  padding: 0.2rem 0.4rem;
+}
+
+.publication-note {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .publication-item.featured {
+    padding: 1rem;
+  }
+
+  .publication-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn-link {
+    margin-bottom: 0.25rem;
+  }
+
+  .publication-content h4 {
+    font-size: 0.9rem;
+  }
+}
+
+/*************************************************
+ *  Experience Page Styling
+ **************************************************/
+
+.experience-section {
+  margin-bottom: 3rem;
+}
+
+.experience-item {
+  background: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+.experience-item.featured {
+  border-left: 4px solid #007bff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.experience-item:hover {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
+}
+
+.company-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.company-logo {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f9fa;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.company-logo i {
+  font-size: 24px;
+}
+
+.company-info h2 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 1.5rem;
+}
+
+.company-info h3 {
+  margin: 0.25rem 0;
+  color: #007bff;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.duration {
+  color: #666;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.role-description h4 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #e9ecef;
+  padding-bottom: 0.5rem;
+}
+
+.role-description ul {
+  margin-bottom: 1.5rem;
+}
+
+.role-description li {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+.tech-stack {
+  margin-top: 1rem;
+}
+
+.tech-stack h5 {
+  color: #495057;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tech-tag {
+  display: inline-block;
+  background: #e9ecef;
+  color: #495057;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.skills-overview {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-top: 3rem;
+}
+
+.skills-overview h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-category {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.skill-category h4 {
+  color: #007bff;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.skill-category h4 i {
+  margin-right: 0.5rem;
+}
+
+.skill-category p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive Design for Experience */
+@media (max-width: 768px) {
+  .company-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .company-logo {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .experience-item {
+    padding: 1.5rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*************************************************
+ *  Projects Section Styling
+ **************************************************/
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.project-item {
+  background: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.project-item:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.project-header h4 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+}
+
+.project-header h4 i {
+  margin-right: 0.5rem;
+  color: #007bff;
+}
+
+.project-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.project-badge.research {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.project-badge.industry {
+  background: #e8f5e8;
+  color: #388e3c;
+}
+
+.project-badge.security {
+  background: #fff3e0;
+  color: #f57c00;
+}
+
+.project-item p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.project-tech {
+  margin-top: 1rem;
+}
+
+/* Responsive for Projects */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
